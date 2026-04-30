@@ -77,11 +77,6 @@ clean: tidy
 	     -delete
 
 tidy:
-# 	      $(patches) \
-# 	      $(patches:.patch=_vc.gbc) \
-# 	      $(patches:.patch=_vc.sym) \
-# 	      $(patches:.patch=_vc.map) \
-# 	      $(patches:%.patch=vc/%.constants.sym)
 	$(RM) $(roms) \
 	      $(roms:.gbc=.sym) \
 	      $(roms:.gbc=.map) \
@@ -91,6 +86,11 @@ tidy:
 	      $(pokeblue_vc_obj) \
 	      $(pokeblue_debug_obj) \
 	      rgbdscheck.o
+# 	      $(patches) \
+# 	      $(patches:.patch=_vc.gbc) \
+# 	      $(patches:.patch=_vc.sym) \
+# 	      $(patches:.patch=_vc.map) \
+# 	      $(patches:%.patch=vc/%.constants.sym)
 	$(MAKE) clean -C tools/
 
 compare: $(roms) $(patches)

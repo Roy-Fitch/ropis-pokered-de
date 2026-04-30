@@ -324,7 +324,7 @@ wCheckFor180DegreeTurn:: db
 
 	ds 1
 
-wMissableObjectIndex:: db
+wToggleableObjectIndex:: db
 
 wPredefID:: db
 wPredefHL:: dw
@@ -390,7 +390,7 @@ wSlotMachineSevenAndBarModeChance:: db
 ; ROM back to return to when the player is done with the slot machine
 wSlotMachineSavedROMBank:: db
 	ds 166
-wLuckySlotHiddenObjectIndex:: db
+wLuckySlotHiddenEventIndex:: db
 
 NEXTU
 ; values between 0-6. Shake screen horizontally, shake screen vertically, blink Pokemon...
@@ -744,12 +744,12 @@ wTempCoins1:: dw
 wTempCoins2:: dw
 
 NEXTU
-wHiddenObjectFunctionArgument:: db
-wHiddenObjectFunctionRomBank:: db
-wHiddenObjectIndex:: db
-wHiddenObjectY:: db
+wHiddenEventFunctionArgument:: db
+wHiddenEventFunctionRomBank:: db
+wHiddenEventIndex:: db
+wHiddenEventY:: db
 wHiddenItemOrCoinsIndex::
-wHiddenObjectX:: db
+wHiddenEventX:: db
 
 NEXTU
 wPlayerSpinInPlaceAnimFrameDelay:: db
@@ -1075,15 +1075,13 @@ wPartyMenuBlkPacket:: ds $30
 
 NEXTU
 	ds 29
-
 ; storage buffer for various strings
-wStringBuffer::  ds 19
+wStringBuffer:: ds 19
+
 NEXTU
 	ds 29
-
 ; the total amount of exp a mon gained
 wExpAmountGained:: dw
-
 wGainBoostedExp:: db
 ENDU
 
@@ -1230,7 +1228,7 @@ ENDU
 ; money received after battle = base money × level of last enemy mon
 wTrainerBaseMoney:: dw ; BCD
 
-wMissableObjectCounter:: db
+wToggleableObjectCounter:: db
 
 	ds 1
 
@@ -1915,9 +1913,9 @@ wUnusedMapVariable:: db
 
 wPlayerCoins:: dw ; BCD
 
-; bit array of missable objects. set = removed
-wMissableObjectFlags:: flag_array $100
-wMissableObjectFlagsEnd::
+; bit array of toggleable objects; bit set = toggled off
+wToggleableObjectFlags:: flag_array $100
+wToggleableObjectFlagsEnd::
 
 	ds 7
 
@@ -1926,9 +1924,9 @@ wSavedSpriteImageIndex:: db
 
 ; each entry consists of 2 bytes
 ; * the sprite ID (depending on the current map)
-; * the missable object index (global, used for wMissableObjectFlags)
+; * the toggleable object index (global, used for wToggleableObjectFlags)
 ; terminated with $FF
-wMissableObjectList:: ds 16 * 2 + 1
+wToggleableObjectList:: ds 16 * 2 + 1
 
 	ds 1
 
@@ -2149,6 +2147,7 @@ wSecondLockTrashCanIndex:: db
 wEventFlags:: flag_array NUM_EVENTS
 
 wSafariZoneEntranceCurScript::
+
 UNION
 wGrassRate:: db
 wGrassMons:: ds WILDDATA_LENGTH - 1
@@ -2190,6 +2189,7 @@ wEnemyMon{d:n}Nick:: ds NAME_LENGTH
 ENDR
 
 ENDU
+
 
 wTrainerHeaderPtr:: dw
 
