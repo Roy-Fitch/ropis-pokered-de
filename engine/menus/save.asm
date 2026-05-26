@@ -149,10 +149,6 @@ TryLoadSaveFileIgnoreChecksum: ; unreferenced
 
 SaveMenu:
 	farcall PrintSaveScreenText
-	ld hl, WouldYouLikeToSaveText
-	call SaveTheGame_YesOrNo
-	and a   ;|0 = Yes|1 = No|
-	ret nz
 	ld a, [wSaveFileStatus]
 	dec a
 	jr z, .save
@@ -168,20 +164,13 @@ SaveMenu:
 	lb bc, 4, 18
 	call ClearScreenArea
 	hlcoord 1, 14
-	ld de, NowSavingString
-	call PlaceString
-	ld c, 120
-	call DelayFrames
 	ld hl, GameSavedText
 	call PrintText
 	ld a, SFX_SAVE
 	call PlaySoundWaitForCurrent
 	call WaitForSoundToFinish
-	ld c, 30
+	ld c, 10 ; Shorter time than before
 	jp DelayFrames
-
-NowSavingString:
-	db "Speichern...@"
 
 SaveTheGame_YesOrNo:
 	call PrintText
@@ -192,10 +181,6 @@ SaveTheGame_YesOrNo:
 	call DisplayTextBoxID
 	ld a, [wCurrentMenuItem]
 	ret
-
-WouldYouLikeToSaveText:
-	text_far _WouldYouLikeToSaveText
-	text_end
 
 GameSavedText:
 	text_far _GameSavedText

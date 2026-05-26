@@ -3,11 +3,6 @@ _FileDataDestroyedText::
 	line "sind defekt!"
 	prompt
 
-_WouldYouLikeToSaveText::
-	text "Möchtest Du das"
-	line "Spiel SICHERN?"
-	done
-
 _GameSavedText::
 	text "<PLAYER> hat das"
 	line "Spiel gesichert!"
