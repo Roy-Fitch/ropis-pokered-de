@@ -179,6 +179,11 @@ ROMX $2D
 	"Battle Engine 5"
 ROMX $2E
 	"Slot Machines"
+ROMX $2F
+ROMX $30
+ROMX $31
+ROMX $32
+ROMX $33
 WRAM0
 	"Audio RAM"
 	org $c100
