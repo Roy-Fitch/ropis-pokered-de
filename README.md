@@ -21,12 +21,18 @@ Meine QoL Version (viel vom Tutorial) des disassembly Projekts
 - Mehrere Moves auf einem Level möglich (mehrere lvl ups auf einmal?)
 - Icon ob Pkmn bereits gefangen wurde
 
+Fehlende Features: Farben! 
+-RB-GBC Version (https://github.com/dannye/pokered-gbc) nicht in deutsch verfügbar. Zu viel Arbeit selbst alles anzupassen.
+-Gelb hat keine deutsche (disassembly) Version, die evtl. schöner wäre als RB.
+
+
+
+
 This is a disassembly of Pokémon: Rote Edition and Blaue Edition.
 
 It builds the following ROMs:
 
-* Pokemon - Rote Edition (G) [S][!].gb  `md5: 8ed0e8d45a81ca34de625d930148a512`
-* Pokemon - Blaue Edition (G) [S][!].gb  `md5: a1ec7f07c7b4251d5fafc50622d546f8`
+* Pokemon - Ropirote Edition (G) [S][!].gb  `md5: ???`
 
 To set up the repository, see [**INSTALL.md**](INSTALL.md).
 
