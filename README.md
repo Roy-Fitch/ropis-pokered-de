@@ -2,7 +2,6 @@
 
 Meine QoL Version (viel vom Tutorial) des disassembly Projekts
 
-
 Änderungen zum Original:
 
 - Sprites-front: Pokemon Gelb
@@ -21,8 +20,6 @@ Meine QoL Version (viel vom Tutorial) des disassembly Projekts
 - Speichertext abgekürzt
 - Mehrere Moves auf einem Level möglich (mehrere lvl ups auf einmal?)
 - Icon ob Pkmn bereits gefangen wurde
-- 
-
 
 This is a disassembly of Pokémon: Rote Edition and Blaue Edition.
 
