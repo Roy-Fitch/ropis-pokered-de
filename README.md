@@ -2,20 +2,24 @@
 
 Meine QoL Version (viel vom Tutorial)
 
-Änderungen:
+Änderungen zum Original:
 
 - Sprites-front: Pokemon Gelb
 - Sprites-back: Space World Edition
 - Running Shoes (B)
 - Inventar 20 -> 50
-- Alle Pokemon fangbar
-    - Rot/Blau zusammengelegt.
+- Alle 151 Pokemon:
+    - Rot/Blau Fangorte zusammengelegt
     - Bisasam: Vertania Wald
     - Schiggy: Route 12
     - Glumanda: Felstunnel 1F
     - Amonitas/Kabuto: Seeschauminsel B4F
     - Mew: Zinnoberinsel-Lab B1F
-
+    - Trade Evolutions auf lvl 37
+- TMs wiederverwendbar
+- Speichertext abgekürzt
+- Mehrere Moves auf einem Level möglich (mehrere lvl ups auf einmal?)
+- Icon ob Pkmn bereits gefangen wurde
 
 
 This is a disassembly of Pokémon: Rote Edition and Blaue Edition.
