@@ -3,10 +3,15 @@
 Meine QoL Version (viel vom Tutorial)
 
 Änderungen:
-Sprites-front: Pokemon Gelb
-Sprites-back: Space World Edition
-Running Shoes (B)
-Inventar 20 -> 50
+
+- Sprites-front: Pokemon Gelb
+
+- Sprites-back: Space World Edition
+
+- Running Shoes (B)
+
+- Inventar 20 -> 50
+
 
 
 This is a disassembly of Pokémon: Rote Edition and Blaue Edition.
