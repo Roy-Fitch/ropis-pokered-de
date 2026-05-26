@@ -76,13 +76,11 @@ ROMX $A
 	"Battle Engine 4"
 ROMX $B
 	"Pics 3"
-	"Battle Engine 5"
 ROMX $C
 	"Pics 4"
 	"Battle Engine 6"
 ROMX $D
 	"Pics 5"
-	"Slot Machines"
 ROMX $E
 	"Battle Engine 7"
 ROMX $F
@@ -177,6 +175,10 @@ ROMX $2B
 	"Pokédex Text"
 ROMX $2C
 	"Move Names"
+ROMX $2D
+	"Battle Engine 5"
+ROMX $2E
+	"Slot Machines"
 WRAM0
 	"Audio RAM"
 	org $c100
