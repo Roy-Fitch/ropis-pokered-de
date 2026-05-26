@@ -1,5 +1,7 @@
 # Pokémon: Rote Edition and Blaue Edition [![Build Status][ci-badge]][ci]
 
+Meine QoL Version (viel vom Tutorial)
+
 This is a disassembly of Pokémon: Rote Edition and Blaue Edition.
 
 It builds the following ROMs:
