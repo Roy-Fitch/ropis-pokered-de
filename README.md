@@ -1,4 +1,4 @@
-# Pokémon: Rote Edition and Blaue Edition [![Build Status][ci-badge]][ci]
+# Pokémon: Ropis Rote Edition (and Blaue Edition?) [![Build Status][ci-badge]][ci]
 
 Meine QoL Version (viel vom Tutorial)
 
