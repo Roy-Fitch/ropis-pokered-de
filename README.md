@@ -5,12 +5,16 @@ Meine QoL Version (viel vom Tutorial)
 Änderungen:
 
 - Sprites-front: Pokemon Gelb
-
 - Sprites-back: Space World Edition
-
 - Running Shoes (B)
-
 - Inventar 20 -> 50
+- Alle Pokemon fangbar
+    - Rot/Blau zusammengelegt.
+    - Bisasam: Vertania Wald
+    - Schiggy: Route 12
+    - Glumanda: Felstunnel 1F
+    - Amonitas/Kabuto: Seeschauminsel B4F
+    - Mew: Zinnoberinsel-Lab B1F
 
 
 
